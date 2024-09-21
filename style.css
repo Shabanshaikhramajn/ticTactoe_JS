@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    font-family: "Roboto", sans-serif;
+
+margin: 0;padding: 0;
+
+}nav{
+    background-color: black;
+    color: white;
+    height: 75px;    
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+}
+
+
+
+nav ul{
+    list-style-type: none;
+
+}
+.gameContainer{
+    /* background-color: yellow; */
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
+    margin-top: 5px ;
+
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 20vw;
+    position: absolute;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vh);
+    grid-template-rows: repeat(3,10vh);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.info{
+    font-size: 25px;
+}
+
+.box{
+    border: 2px solid black;
+
+    font-size: 8vw;
+    display: flex;
+
+    align-items: center;
+justify-content: center;
+/* background-color: blueviolet; */
+cursor: pointer;
+
+}
+.box:hover{
+    background-color: rgb(159, 106, 209);
+}
+
+.gameinfo{
+    padding: 0 34px;
+
+}
+
+
+.imgbox img{
+    width: 0;
+    transition: width is ease-in-out ;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+
+
+#reset{
+    width: 150px;
+    border-radius: 7px;
+    margin: 0;
+    padding: 3px 6px;
+    cursor: pointer;
+    background-color: rgb(10, 212, 226);
+}
+
+
+@media screen and  (max-width: 800px){
+    .gameContainer
+    {
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+
+    }
+    .gameinfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+
+}
